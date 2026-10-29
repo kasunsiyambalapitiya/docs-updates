@@ -152,8 +152,8 @@ by default) directory and run the update tool again.</p>
 </tr>
 <tr id="unable-to-run-wso2update-darwin-on-macos27">
 <td>Unable to run wso2update_darwin on macOS27</td>
-<td><p>When upgrading to or installing macOS 27, the operating system automatically removes Rosetta 2. Older WSO2 product distributions bundle an Intel-based (amd64) Update Tool binary (<code>wso2update_darwin</code>), which requires Rosetta 2 to execute on Apple Silicon (M-series) Macs. As a result, running the Update Tool on macOS 27 without Rosetta 2 installed will fail.</p>
-    <p>Product Releases Affected:</p>
+<td><p>When upgrading to or installing macOS 27, the operating system automatically removes Rosetta 2. Some WSO2 product distributions bundle an Update Tool only compatible with the x86 / x86-64 architecture, which requires Rosetta 2 to execute on Apple Silicon (M-series) Macs. As a result, running the Update Tool on macOS 27 without Rosetta 2 installed will fail.</p>
+    <p>Impacted Product Versions:</p>
     <ul>
         <li>WSO2 API Manager versions prior to wso2am-4.4.0</li>
         <li>WSO2 Identity Server versions prior to wso2is-7.1.0</li>
@@ -162,7 +162,7 @@ by default) directory and run the update tool again.</p>
     </ul></td>
 <td><p>If you are operating on Apple Silicon hardware running macOS 27, please ensure Rosetta 2 is installed by executing the following command in your terminal:</p>
     <p><code>softwareupdate --install-rosetta</code></p>
-    <p><strong>Note:</strong> You may append <code>--agree-to-license</code> to complete the installation non-interactively.</p></td>
+    </td>
 </tr>
 </tbody>
 </table>
